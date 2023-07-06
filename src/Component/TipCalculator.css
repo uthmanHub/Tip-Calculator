@@ -1,0 +1,334 @@
+body {
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #b3dce3;
+}
+
+.logo {
+    width: 87px;
+    margin: 30px auto;
+}
+
+.container {
+    display: flex;
+    max-width: 920px;
+    height: 421px;
+    padding: 30px 0;
+    margin: 50px auto;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+}
+
+.card-LHS {
+    width: 379px;
+    height: 388px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+
+.bill input,
+.people input {
+    width: 359px;
+    height: 28px;
+    background-color: #f3f9f9;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 10px;
+    color: #00474b;
+    font-size: 16px;
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.bill input:focus,
+.people input:focus,
+.custom:focus {
+    outline: 2px solid #26c2ae;
+}
+
+.input div {
+    width: 117px;
+    display: grid;
+    grid-template-columns: repeat(3, 108px);
+    grid-template-rows: repeat(2, 38px);
+    text-decoration: none;
+    gap: 20px;
+}
+
+
+.percentage>div a {
+    color: #fff;
+    background-color: #115f5f;
+    font-size: larger;
+    text-align: center;
+    padding-top: 3px;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+.percentage>div a:hover {
+    background-color: #9fe8df;
+    color: #00474b;
+}
+
+.percentage>div a:focus {
+    background-color: #26c2ae;
+    color: #00474b;
+}
+
+.custom-input {
+    outline: none;
+    border: none;
+    text-align: center;
+    color: #00474b;
+    font-size: larger;
+    border-radius: 5px;
+    background-color: #f3f9f9;
+    font-weight: 600;
+}
+
+.custom-input:focus {
+    text-align: right;
+}
+
+.people-msg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.people-error {
+    outline: 2px solid red;
+}
+
+.error {
+    color: red;
+}
+
+p {
+    color: #5e7a7d;
+    margin-bottom: 5px;
+    word-spacing: 4px;
+}
+
+
+
+
+
+.card-RHS {
+    background-color: #00474b;
+    max-width: 373px;
+    width: 100%;
+    height: 377px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 333px;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.amount {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.amount div span:first-child {
+    font-weight: bold;
+    color: #fff;
+}
+
+.amount div span:last-child {
+    font-size: 16px;
+    color: #7f9d9f;
+}
+
+.number {
+    font-size: 32px;
+    color: #26c2ae;
+}
+
+.reset-btn {
+    width: 333px;
+    height: 48px;
+    text-align: center;
+    text-decoration: none;
+    color: #00474b;
+    background-color: #0d686d;
+    margin-top: 10px;
+}
+
+.reset-btn p {
+    margin-top: 10px;
+}
+
+.reset-btn:focus,
+.reset-btn:hover {
+    width: 333px;
+    height: 48px;
+    text-align: center;
+    text-decoration: none;
+    color: #00474b;
+    background-color: #26c2ae;
+}
+
+
+.dollar span {
+    position: absolute;
+}
+
+.icon {
+    padding: 10px;
+}
+
+
+
+/* ************ screen size less than 425px *************************** */
+
+
+
+@media (max-width: 425px) {
+
+    .logo {
+        width: 87px;
+        margin: 30px auto;
+    }
+
+    .container {
+        width: auto;
+        height: 709px;
+        background-color: rgb(255, 255, 255);
+        padding: 20px;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        border-radius: 20px 20px 0 0;
+        align-items: center;
+    }
+
+    .card-LHS {
+        width: auto;
+        height: 412px;
+    }
+
+    p {
+        font-size: 16px;
+        word-spacing: -2px;
+    }
+
+    .bill>input,
+    .people>input {
+        width: 287px;
+    }
+
+    .dollar>input {
+        width: 304px;
+    }
+
+    .input div {
+        width: 117px;
+        display: grid;
+        grid-template-columns: repeat(2, 146.68px);
+        grid-template-rows: repeat(3, 48px);
+        text-decoration: none;
+        gap: 20px;
+    }
+
+    .input div a {
+        padding: 10px;
+    }
+
+
+    .card-RHS {
+        width: 287px;
+        height: 217px;
+    }
+
+    .result {
+        width: 100%;
+    }
+
+    .reset-btn {
+        width: 281px;
+        height: 48px;
+    }
+
+    .reset-btn p {
+        margin-top: 8px;
+    }
+
+    .reset-btn:focus,
+    .reset-btn:hover {
+        width: 100%;
+        height: 48px;
+    }
+
+}
+
+/* ************ screen size at than 768px *************************** */
+
+
+@media (width: 768px) {
+
+    .container {
+        width: 90%;
+        border-radius: 20px;
+        justify-content: space-between;
+        padding: 25px 20px;
+    }
+
+    .card-LHS {
+        padding: 10px;
+        width: 297px;
+
+    }
+
+    .bill>input,
+    .people>input,
+    .reset-btn,
+    .reset-btn:hover {
+        width: 100%;
+    }
+
+    .dollar input {
+        width: 281px;
+    }
+
+    .input div {
+        width: 117px;
+        display: grid;
+        grid-template-columns: repeat(3, 90px);
+        grid-template-rows: repeat(2, 38px);
+        text-decoration: none;
+        gap: 15px;
+    }
+
+
+    .card-RHS {
+        width: 297px;
+        height: 388px;
+        padding: 20px;
+    }
+
+    .result {
+        width: 100%;
+    }
+
+}
