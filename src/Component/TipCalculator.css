@@ -47,6 +47,11 @@ body {
     font-weight: 600;
 }
 
+input ::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
 .bill input:focus,
 .people input:focus,
 .custom:focus {

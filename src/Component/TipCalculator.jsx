@@ -53,7 +53,7 @@ const TipCalculator = () => {
               <span className="icon">
                 <img src={dollar} />
               </span>
-              <input placeholder="0" onChange={handleBill} value={bill} />
+              <input placeholder="0" type="number" onChange={handleBill} value={bill} />
             </div>
           </div>
 
@@ -105,6 +105,7 @@ const TipCalculator = () => {
                   className="custom-input"
                   onChange={handlePercent}
                   placeholder="Custom"
+                  type="number"
                 />
               </div>
             </div>
@@ -123,6 +124,7 @@ const TipCalculator = () => {
               <input
                 className={showError ? "people-error" : "input-people "}
                 placeholder="0"
+                type="number"
                 onChange={handlePeople}
                 value={numPeople}
               />
